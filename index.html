@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head Tags Section -->
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Name Of Website -->
+    <title>Weather</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Logo -->
+    <link rel="icon" type="image/png" href="./images/Weather-PNG.png" />
+
+    <!-- Font Awsome -->
+
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/normlize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Files -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- our css file -->
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+
+  <body>
+    <!-- Nav Bar -->
+    <nav id="nav-bar" class="navbar navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand text-white p-3 d-flex align-items-end mt-2 justify-content-center gap-3"
+          href="./index.html"
+        >
+          <img src="./images/5801789.png" class="w-50" alt="Logo" />
+          <div class="info-logo">
+            <h3 class="fs-6">Weather</h3>
+            <p class="fs-6">Tagline goes here</p>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse me-5 navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Live Cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index2.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main Section -->
+    <main>
+      <!-- Home Section -->
+      <section id="news" class="home-section pb-5">
+        <div class="container-md">
+          <!-- Input Div -->
+
+          <div class="div d-flex justify-content-center">
+            <div
+              class="input bg-dark p-3 rounded-pill d-flex mt-5 justify-content-between w-100"
+            >
+              <input
+                type="search"
+                class="input rounded-pill w-100"
+                id="searchinput"
+                placeholder="Find Location"
+              />
+              <button
+                id="btn"
+                class="btn btn-primary rounded-pill pe-4 ps-4 fw-bold bott"
+              >
+                Find
+              </button>
+            </div>
+          </div>
+
+          <div id="row" class="row mt-5 g-0">
+            <div class="sk-cube-grid">
+              <div class="sk-cube sk-cube1"></div>
+              <div class="sk-cube sk-cube2"></div>
+              <div class="sk-cube sk-cube3"></div>
+              <div class="sk-cube sk-cube4"></div>
+              <div class="sk-cube sk-cube5"></div>
+              <div class="sk-cube sk-cube6"></div>
+              <div class="sk-cube sk-cube7"></div>
+              <div class="sk-cube sk-cube8"></div>
+              <div class="sk-cube sk-cube9"></div>
+            </div>
+          </div>
+
+          <!-- Weather div -->
+        </div>
+      </section>
+    </main>
+    <!-- Footer Section -->
+
+    <footer>
+      <section class="footer pb-5">
+        <div class="container-md ">
+          <div class="div d-md-flex justify-content-between">
+            <div
+              class="input  bg-dark p-3 rounded-pill d-flex mt-5 justify-content-between "
+            >
+              <input
+                type="search"
+                class="input rounded-pill w-100"
+                placeholder="Enter Your Email"
+              />
+              <button
+                id="btn"
+                class="btn btn-primary rounded-pill pe-4 ps-4 fw-bold bott"
+              >
+                Subscribe
+              </button>
+            </div>
+            <div
+              class="links d-flex justify-content-center align-items-center gap-4 pt-4 fs-4"
+            >
+              <div
+                class="bg-dark p-2 rounded-circle d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-brands fa-facebook"></i>
+              </div>
+              <div
+                class="bg-dark p-2 rounded-circle d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div
+                class="bg-dark p-2 rounded-circle d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div
+                class="bg-dark p-2 rounded-circle d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+            </div>
+          </div>
+          <p class="mt-4 text-white">
+            Copyright 2014 Company name. Designed by Themezy. All rights
+            reserved
+          </p>
+        </div>
+      </section>
+    </footer>
+
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

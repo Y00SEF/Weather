@@ -1,0 +1,521 @@
+<!-- 
+  Data Types Intro
+  - String
+  - Number
+  - Array => Object
+  - Object
+  - Boolean
+  -->
+<!-- =============================== -->
+<!-- 
+  Variables Intro
+  - What Is Variable ?
+  - Why We Use Variables ?
+  - Declare A Variable And Use
+  - Syntax ( Keyword | Variable Name | Assignment Operator | Variable Value )
+  - Variable Without Var
+  - Multiple Variables In The Same Line
+  - Id And Global Variable
+  - Loosely Typed vs Strongly Type
+   -->
+<!-- =============================== -->
+
+<!-- 
+     Var
+  - Redeclare (Yes)
+  - Access Before Declare (Undefined)
+  - Variable Scope Drama [Added To Window] ()
+  - Block Or Scope Function
+
+  Let
+  - Redeclare (No => Error)
+  - Access Before Declare (Error)
+  - Variable Scope Drama ()
+  - Block Or Scope Function
+
+  Const
+  - Redeclare (No => Error)
+  - Access Before Declare (Error)
+  - Variable Scope Drama ()
+  - Block Or Scope Function
+   -->
+<!-- =============================== -->
+<!-- 
+  String Syntax + Character Escape Sequences
+  \ Escape + Line Continue
+  \n
+
+  Concatenation ==> " "
+ -->
+<!-- =============================== -->
+<!--
+- + Unary Plus [Return Number If Its Not Number]
+  - - Unary Negation [Return Number If Its Not Number + Negates It]
+  Tests
+  - Normal Number
+  - String Number
+  - String Negative Number
+  - String Text
+  - Float
+  - Hexadecimal Numeral System => 0xFF
+  - null
+  - false
+  - true 
+ -->
+<!-- =============================== -->
+<!-- 
+Assignment Operators
+
+
+let a = 10;
+
+a = a + 20;
+
+a = a + 70;
+
+a += 100; // a = a + 100
+
+a -= 50; // a = a - 50
+
+a /= 50; // a = a / 50 
+-->
+<!-- =============================== -->
+<!-- 
+
+  Number
+  - Double Precision
+  - Syntactic Sugar "_"
+  - e
+  - **
+  - With Decimal
+  - Number + BigInt
+  - Number Min Value
+  - Number Max Value
+
+ -->
+<!-- =============================== -->
+<!-- 
+Number Methods
+  - Two Dots To Call A Methods
+  - toString()
+  - toFixed()
+  - parseInt()
+  - parseFloat()
+  - isInteger() [ES6]
+  - isNaN() [ES6]
+  -->
+<!-- =============================== -->
+
+<!-- 
+    Math Object
+  - math.round()
+  - ceil()
+  - floor()
+  - min()
+  - max()
+  - pow()
+  - random()
+  - trunc() [Es6] -->
+<!-- =============================== -->
+
+<!-- 
+  String Methods
+  - Access With Index
+  - Access With charAt()
+  - length
+  - trim()
+  - toUpperCase()
+  - toLowerCase()
+  - Chain Methods
+    -------------------------
+  - indexOf(Value [Mand], Start [Opt] 0)
+  - lastIndexOf(Value [Mand], Start [Opt] Length)
+  - slice(Start [Mand], End [Opt] Not Include End)
+  - repeat(Times) [ES6]
+  - split(Separator [Opt], Limit [Opt])
+  -->
+<!-- =============================== -->
+<!-- 
+ Comparison Operators
+  - == Equal
+  - != Not Equal
+
+  - === Identical (Compare value + type)
+  - !== Not Identical
+
+  - > Larger Than
+  - >= Larger Than Or Equal
+
+  - < Smaller Than
+  - <= Smaller Th  an Or Equal -->
+<!-- =============================== -->
+
+<!-- 
+   Comparison Operators
+  - == Equal
+  - != Not Equal
+
+  - === Identical
+  - !== Not Identical
+
+  - > Larger Than
+  - >= Larger Than Or Equal
+
+  - < Smaller Than
+  - <= Smaller Than Or Equal -->
+
+<!-- 
+    Control Flow
+  - if
+  - else if
+  - else
+
+  if (Condition) {
+  Block Of Code
+  }
+    -->
+<!-- =============================== -->
+<!-- 
+/*
+  Conditional (Ternary) Operator
+*/
+
+let theName = "Mona";
+let theGender = "Female";
+let theAge = 30;
+
+if (theGender === "Male") {
+  console.log("Mr");
+} else {
+  console.log("Mrs");
+}
+
+// Condition ? If True : If False
+
+theGender === "Male" ? console.log("Mr") : console.log("Mrs");
+
+let result = theGender === "Male" ? "Mr" : "Mrs";
+
+document.write(result);
+
+console.log(theGender === "Male" ? "Mr" : "Mrs");
+
+console.log(`Hello ${theGender === "Male" ? "Mr" : "Mrs"} ${theName}`);
+
+theAge < 20
+  ? console.log(20)
+  : theAge > 20 && theAge < 60
+  ? console.log("20 To 60")
+  : theAge > 60
+  ? console.log("Larger Than 60")
+  : console.log("Unknown");
+  -->
+<!-- =============================== -->
+<!-- 
+ Switch Statement
+  switch(expression) {
+    Case 1:
+      // Code Block
+      break;
+    Case 2:
+      // Code Block
+      break;
+    Default:
+      // Code Block
+  }
+  - Default Ordering
+  - Multiple Match
+  - === -->
+<!-- =============================== -->
+
+<!-- 
+  Arrays
+  - Create Arrays [Two Methods] new Array() + []
+  - Access Arrays Elements
+  - Nested Arrays
+  - Change Arrays Elements
+  - Check For Array Array.isArray(arr); 
+  -->
+<!-- =============================== -->
+
+<!-- 
+   Arrays Methods [Adding And Removing]
+  - unshift("", "") Add Element To The First
+  - push("", "") Add Element To The End
+  - shift() Remove First Element From Array
+  - pop() Remove Last Element From Array 
+  -->
+
+/* Select Html Element ==> HTML Element ==> Object innerHTML
+console.log((document.getElementById("demo").innerHTML = "Omar Attea Tawfik"));
+====================================================== (exepration ay haga btdik
+value) ====================================================== - Display messege
+user Window ==> Object (properties ... method) Console ==> Object 1- Debug -
+consume Api ==> get data products - JS ==> Create Div ==> Products
+====================================================== - variable ==> declare
+var age // variable age == 30 initializtion reAssign
+======================================== - can't start with number of special
+charcter expect(_$) - reserved words - spaces exeption _ $
+=================================================== - naming converstion (varibl
+- functiob) - camel case > studentFirstName
+=================================================== - ASI - JS it's Case
+Sesntive =================================================== === Data Types -
+primitive Data Type Nummber ==> 12 1222222 12.22 String ==> 'Y' "Youssef" "55"
+Boolean ==> true false undefined ==> undefined null ==> null symbol ====> unique
+key in object bigInt ====> Number 45342524525 * 10 - non primitive Data Type ==
+Object ================================================= typeof ==> unary
+operator ==> value ================================================= - lossly
+typed language ==> strongly typed - dynamic language ==> statc language
+================================================= === operators - unary , binary
+, ternary - arthemtic operators --------------------- + - * / .. % 978978 & 7
+number & n ==> 0 n-1 Math.pow (2,3) == > 2 os 3 ==> 2**3
+====================================== ++ ==> increment (prefix , prosfix) --
+==> decrement (prefix , prosfix)
+================================================= - comparison operators
+---------------------- > < == === != !== >= <= evaluate value ==> true , false
+================================================= - Assignment Operators = , +=
+, -= , /= , **= , &= ================================================= - Logical
+Operators ! || && ================================================= && || ==>
+short circuit & | ==> long circuit
+================================================= - control statments (condtion
+... loops .. jump) ================================================
+------------- Number ==> Nan Infinty -Infinty
+================================================ - type conversion 1- explicit
+conversion (manual) 2- implicit conversion (automatic - type coercion) - to
+number number(value).. + (unary operator) - to string string(value) - boolean
+boolen(value) .. true false ----------------------------------------------- -
+tuthly values ==> - falsy values ==> "" '' NaN 0 Null undefined
+===================================================== ====================
+Search ==================== 1- isNaN() 2- Number.isNaN ----------------- 3-
+defer async attribute is script tag -------------------------------------- lw
+nan yb2a 8alat m4 number lw m4 nan yb2a true
+=================================================== - implicit conversion 1- to
+number - * / 2- to string + 3- to boolean !
+==================================================== operator ==> specifiaction
++ ====> number + number string + string = 2in1 string number + string = string
+bool + string = = string bool + number = number
+====================================================
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+---------------------------------------------------- Most Quistion in js
+interview (==) loose equality operator (type coercion) VS (===)strict equality
+operator (type coercion) ----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+=============================================== - input form user
+window.prompt("")==> any value comes in string input==> value ==> cancel .. ok
+==> function return value input var num = window.prompt("")
+================================================== ternary operator ==>
+condition ? ture statement : false statement loops ==> 1- for 2- while 3- do
+while ================================================== control flow statements
+- itreation ==> for - while - do while */ // var mo = "55"; // console.log(+mo);
+// var day = 8; // switch (day) { // case 1: // console.log("Suterday"); //
+break; // case 2: // console.log("Saunday"); // break; // case 3: //
+console.log("MonDay"); // break; // case 4: // console.log("TuesDay"); // break;
+// case 5: // console.log("WendesDay"); // break; // case 6: //
+console.log("ThursDay"); // break; // case 7: // console.log("FriDay"); //
+default: // console.log("Invalid Day Number"); // } // if (day == 1) { //
+console.log("Sut"); // } else if (day == 2) { // console.log("Sun"); // } else
+if (day == 3) { // console.log("Mon"); // } else { // console.log("Invalid Day
+Number"); // } // var num = 50; // if (num > 0) { // console.log("Positive"); //
+} else if (num < 0) { // console.log("Negative"); // } else if ((num = 0)) { //
+console.log("Zero"); // } else { // console.log("Invaild Number"); // } // for
+(var i = 0; i < 10; i++) { // console.log("Youssef"); // } //
+============================================================================================================================================================================================================================================================
+/* - function (declare , parametr , return , scopes , types , hoising) - object
+= (declare , access add update , built-in objects) - array (declare , methods)
+========================================
+======================================== should i learn it ++ test llcode bta3i
+========================================
+======================================== - Declation function ==> function(){} -
+Expression Function ==> var x = function(){} var ==> name of function --
+sayhello = function(){} -- anonymous function ==> function without name
+------------------------------------ - Self Invoked Function (Excution One Time)
+// anonymouns function - IIFE //(Wrap function()) (function sayHello() {
+console.log("Hello"); })();
+====================================================================================
+Interviews - Hoisting ==> رررفع decleration ==> top scope they declared in -
+read all declarations (var varName, function test()) - executs code */ //
+====================================================================================
+//js engine //declation => store function (memory) // input el function ==>
+parameters // (arguments,"")==> argument // hint ==> function overloading -- in
+js can't run // polymorphism // return ==> Value /**function sum(num1, num2
+//parameters) { // steps .. important var sum = num1 + num2; // define variable
+sum = 30 , log(30) return sum; // end ... 30 // return sum , num1 ?? return num1
+only } // call , invoke //sum(5, 10); //arguments == value var result = sum(20,
+10); // 30 console.log(result); ========================================== -->
+CRUD Operation 1- creat 2- read 3- update 4- delete 5- search
+==========================================
+<!--
+  FE (storage... presistant..browser)
+   
+  local storage ==> presistant storge insde browser (5MB)
+  
+   -->
+
+*/ // var productNameinput = document.getElementById("productname");
+ // var productpriceinput = document.getElementById("productprice");
+// var productcategoryinput = document.getElementById("productcategory");
+ // var roductdiscriptioninput = document.getElementById("productDescription");
+ // var roductimageinput = document.getElementById("productimage"); 
+// va defultOptioninput = document.getElementById("defultoption"); 
+// var element =
+document.getElementById("row-lo"); // var productList = []; 
+// if
+(localStorage.getItem("Products")) { 
+  // productList =
+JSON.parse(localStorage.getItem("Products")); 
+// displayAll(); 
+// } 
+// function
+addProduct() { 
+  // 
+  // collect Product info from inputs 
+  // var product = { 
+  //
+productName: productNameinput.value, 
+// productprice: productpriceinput.value,
+
+// productcategory: productcategoryinput.value, 
+// productdiscription:
+productdiscriptioninput.value, 
+// productimage: productimageinput.files[0].name,
+
+// }; 
+// 
+// Add Porduct to Array 
+// productList.push(product); 
+// displayAll();
+
+// localStorage.setItem("Products", JSON.stringify(productList)); 
+//
+resetAllInputs(); 
+// } 
+// function resetAllInputs() { 
+  // productNameinput.value
+= null; 
+// productpriceinput.value = null; 
+// productcategoryinput.value = null;
+
+// productdiscriptioninput.value = null; 
+// productimageinput.value = null; 
+//
+defultOptioninput.selected = true; 
+// } 
+// function displayAll() { 
+  // var
+cartona = ``; 
+// for (i = 0; i < productList.length; i++) {
+<!-- 
+  //     cartona += `<div class="col-md-3"><div class="item bg-danger text-light p-4">
+//             <h3>${productName}</h3>
+//             <p>${productprice}</p>
+//             <p>${productcategory}</p>
+//           </div>
+//         </div>`; -->
+// } // element.innerHTML = cartona; // }
+<!-- Search image valdition and description -->
+
+
+
+
+
+<!-- -->
+
+--> Create Element ===> document.createElement("h3") ===> append() or appendchild()
+--> DOM Traversing ==> Select Element Throw Another Element (children , childNodes , nextElementsSblin , nexSibling,
+--> BOM ==> SetInterval() , setTimeOut() , clearInterval() , clearTimeOut().
+--> Event Delegation
+--> Event Bubblinig & Capturing.
+--> API ==> URL ==> BaseUrl(Fixed) + EndPoint (changeble). ==> Json[{}]
+--> AJAX (Async Javascript And XML) ==> ActiveXObject , XMLHttpRequest
+--> 
+    0 ==> connection not iniat
+    1 ==> connection istablish
+    2 ==> request recieved
+    3 ==> request proccessing 
+    4 ==> request finished
+
+
+    Async Code ==> Non Blocking Code ==> events , loop , function api , setTimeOut()
+
+    Sync Code ==> Blocking Code ==> log()
+
+
+    -- Callback
+    -- Promise
+    -- Async & Await
+
+
+  
+  // promise ==> object (container) ==> async code (time) ==> to excute in future
+
+  // promise => stauts ==> pending, seteld (fulfilled , reject)
+
+  // 1- Build promise
+        - async code
+        - when success (fulfilled)
+        - when failed (feild)
+
+
+  // 2- consuming promise
+        - what excute if success (fulfilled)
+        - what excute if failed (reject)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    i am 
+    i have gra from .. at
+    i have worked(pp) has .. as a costumer service agent at el dhan 
+    my hobbies are 
+
+    (elaborate )
+
+
+
